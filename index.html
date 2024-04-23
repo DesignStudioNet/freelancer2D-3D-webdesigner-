@@ -765,37 +765,28 @@
           </div>
 
           <div class="col-lg-5" data-aos="fade">
-            <form action="https://formspree.io/f/mgegnlpz" method="post" class="php-email-form">
-              <h3>Ecrivez-nous</h3>
-              <p>Pour toutes vos demandes de devis ou informations</p>
-              <div class="row gy-3">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Votre Nom" required>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Numéro de Téléphone" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Envoyer</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Message envoyé</div>
-
-                  <button type="submit">Get a quote</button>
-                </div>
-
-              </div>
-            </form>
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mgegnlpz" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nom et prénom
+      
+    </label>
+    <input type="text" name="name" id="full-name" placeholder="Name/Nom" required="">
+    <label for="email-address">Adresse email
+      
+    </label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@email.com" required="">
+    <label for="telephone">Num Téléphone
+      
+    </label>
+    <input type="telephone" name="telephone" id="telephone" placeholder="0606060606">
+    <label for="complaint">Message
+      
+    </label>
+    <textarea rows="6" name="complaint" id="complaint" placeholder="Ecrivez votre message" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+  </fieldset>
+  <input type="submit" value="Envoyer">
+    </form>
           </div><!-- End Quote Form -->
 
         </div>
